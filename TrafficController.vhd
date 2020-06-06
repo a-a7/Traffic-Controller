@@ -14,7 +14,7 @@ entity trafficController is
     redEW       : out std_logic;    --Traffic lights East & Westbound
     yellowEW    : out std_logic;
     greenEW     : out std_logic;
-    leftEW      : out std_logic;
+    leftEW      : out std_logic
     );
 end entity;
 
