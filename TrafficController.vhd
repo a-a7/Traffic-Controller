@@ -20,10 +20,10 @@ architecture behaviour of trafficController is
 begin
     the_fsm: process(clock, reset_n)
     begin
-        if (reset = '0') then
+        if (reset_n = '0') then
             afterRed <= '0';
             state <= NSL;
-        elsif (clk'event and clk = 1) then
+        elsif rising_edge(clock) then
             case state is
                 when NSL =>
                     state <=NSG;
@@ -39,9 +39,11 @@ begin
                         state <= NSL;
                     end if;
                 when EWL =>
-                    state <= EWY;
+                    state <= EWG;
+					 when EWG =>
+					     state <= EWY;
                 when EWY =>
-                    afterRed = '1';
+                    afterRed <= '1';
                     state <= R;
             end case;
         elsif (buttonNS = '1') then
