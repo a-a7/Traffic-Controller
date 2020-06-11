@@ -1,5 +1,5 @@
 Analysis & Synthesis report for TrafficController
-Sat Jun 06 22:10:17 2020
+Wed Jun 10 21:54:55 2020
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Sat Jun 06 22:10:17 2020          ;
+; Analysis & Synthesis Status        ; Failed - Wed Jun 10 21:54:55 2020          ;
 ; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
 ; Revision Name                      ; TrafficController                          ;
 ; Top-level Entity Name              ; TrafficController                          ;
@@ -157,34 +157,32 @@ Parallel compilation was disabled, but you have multiple processors available. E
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
-    Info: Processing started: Sat Jun 06 22:10:16 2020
+    Info: Processing started: Wed Jun 10 21:54:54 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off TrafficController -c TrafficController
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file trafficcontroller.vhd
     Info (12022): Found design unit 1: trafficController-behaviour
     Info (12023): Found entity 1: trafficController
 Info (12127): Elaborating entity "TrafficController" for the top level hierarchy
-Warning (10492): VHDL Process Statement warning at TrafficController.vhd(49): signal "buttonNS" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at TrafficController.vhd(51): signal "buttonEW" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Error (10818): Can't infer register for "state.EWY" at TrafficController.vhd(23) because it does not hold its value outside the clock edge File: C:/Users/TheMineA7/Desktop/VHDL/Traffic Controller/TrafficController.vhd Line: 23
-Info (10041): Inferred latch for "state.EWY" at TrafficController.vhd(21)
-Error (10818): Can't infer register for "state.EWG" at TrafficController.vhd(23) because it does not hold its value outside the clock edge File: C:/Users/TheMineA7/Desktop/VHDL/Traffic Controller/TrafficController.vhd Line: 23
-Info (10041): Inferred latch for "state.EWG" at TrafficController.vhd(21)
-Error (10818): Can't infer register for "state.EWL" at TrafficController.vhd(23) because it does not hold its value outside the clock edge File: C:/Users/TheMineA7/Desktop/VHDL/Traffic Controller/TrafficController.vhd Line: 23
-Info (10041): Inferred latch for "state.EWL" at TrafficController.vhd(21)
-Error (10818): Can't infer register for "state.R" at TrafficController.vhd(23) because it does not hold its value outside the clock edge File: C:/Users/TheMineA7/Desktop/VHDL/Traffic Controller/TrafficController.vhd Line: 23
-Info (10041): Inferred latch for "state.R" at TrafficController.vhd(21)
-Error (10818): Can't infer register for "state.NSY" at TrafficController.vhd(23) because it does not hold its value outside the clock edge File: C:/Users/TheMineA7/Desktop/VHDL/Traffic Controller/TrafficController.vhd Line: 23
-Info (10041): Inferred latch for "state.NSY" at TrafficController.vhd(21)
-Error (10818): Can't infer register for "state.NSG" at TrafficController.vhd(23) because it does not hold its value outside the clock edge File: C:/Users/TheMineA7/Desktop/VHDL/Traffic Controller/TrafficController.vhd Line: 23
-Info (10041): Inferred latch for "state.NSG" at TrafficController.vhd(21)
-Error (10818): Can't infer register for "state.NSL" at TrafficController.vhd(23) because it does not hold its value outside the clock edge File: C:/Users/TheMineA7/Desktop/VHDL/Traffic Controller/TrafficController.vhd Line: 23
-Info (10041): Inferred latch for "state.NSL" at TrafficController.vhd(21)
-Error (10822): HDL error at TrafficController.vhd(26): couldn't implement registers for assignments on this clock edge File: C:/Users/TheMineA7/Desktop/VHDL/Traffic Controller/TrafficController.vhd Line: 26
+Error (10818): Can't infer register for "theState.EWY" at TrafficController.vhd(23) because it does not hold its value outside the clock edge File: C:/Users/TheMineA7/Desktop/VHDL/Traffic Controller/TrafficController.vhd Line: 23
+Info (10041): Inferred latch for "theState.EWY" at TrafficController.vhd(21)
+Error (10818): Can't infer register for "theState.EWG" at TrafficController.vhd(23) because it does not hold its value outside the clock edge File: C:/Users/TheMineA7/Desktop/VHDL/Traffic Controller/TrafficController.vhd Line: 23
+Info (10041): Inferred latch for "theState.EWG" at TrafficController.vhd(21)
+Error (10818): Can't infer register for "theState.EWL" at TrafficController.vhd(23) because it does not hold its value outside the clock edge File: C:/Users/TheMineA7/Desktop/VHDL/Traffic Controller/TrafficController.vhd Line: 23
+Info (10041): Inferred latch for "theState.EWL" at TrafficController.vhd(21)
+Error (10818): Can't infer register for "theState.R" at TrafficController.vhd(23) because it does not hold its value outside the clock edge File: C:/Users/TheMineA7/Desktop/VHDL/Traffic Controller/TrafficController.vhd Line: 23
+Info (10041): Inferred latch for "theState.R" at TrafficController.vhd(21)
+Error (10818): Can't infer register for "theState.NSY" at TrafficController.vhd(23) because it does not hold its value outside the clock edge File: C:/Users/TheMineA7/Desktop/VHDL/Traffic Controller/TrafficController.vhd Line: 23
+Info (10041): Inferred latch for "theState.NSY" at TrafficController.vhd(21)
+Error (10818): Can't infer register for "theState.NSG" at TrafficController.vhd(23) because it does not hold its value outside the clock edge File: C:/Users/TheMineA7/Desktop/VHDL/Traffic Controller/TrafficController.vhd Line: 23
+Info (10041): Inferred latch for "theState.NSG" at TrafficController.vhd(21)
+Error (10818): Can't infer register for "theState.NSL" at TrafficController.vhd(23) because it does not hold its value outside the clock edge File: C:/Users/TheMineA7/Desktop/VHDL/Traffic Controller/TrafficController.vhd Line: 23
+Info (10041): Inferred latch for "theState.NSL" at TrafficController.vhd(21)
+Error (10822): HDL error at TrafficController.vhd(25): couldn't implement registers for assignments on this clock edge File: C:/Users/TheMineA7/Desktop/VHDL/Traffic Controller/TrafficController.vhd Line: 25
 Error (12153): Can't elaborate top-level user hierarchy
-Error: Quartus II 64-Bit Analysis & Synthesis was unsuccessful. 9 errors, 3 warnings
-    Error: Peak virtual memory: 4619 megabytes
-    Error: Processing ended: Sat Jun 06 22:10:17 2020
+Error: Quartus II 64-Bit Analysis & Synthesis was unsuccessful. 9 errors, 1 warning
+    Error: Peak virtual memory: 4620 megabytes
+    Error: Processing ended: Wed Jun 10 21:54:55 2020
     Error: Elapsed time: 00:00:01
     Error: Total CPU time (on all processors): 00:00:01
 
