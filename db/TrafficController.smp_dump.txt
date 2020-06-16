@@ -1,0 +1,11 @@
+
+State Machine - |trafficController|theState
+Name theState.EWR theState.EWY theState.EWG theState.EWL theState.NSR theState.NSY theState.NSG theState.NSL 
+theState.NSL 0 0 0 0 0 0 0 0 
+theState.NSG 0 0 0 0 0 0 1 1 
+theState.NSY 0 0 0 0 0 1 0 1 
+theState.NSR 0 0 0 0 1 0 0 1 
+theState.EWL 0 0 0 1 0 0 0 1 
+theState.EWG 0 0 1 0 0 0 0 1 
+theState.EWY 0 1 0 0 0 0 0 1 
+theState.EWR 1 0 0 0 0 0 0 1 

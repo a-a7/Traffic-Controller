@@ -1,0 +1,36 @@
+|TrafficController
+reset => theState.OUTPUTSELECT
+reset => theState.OUTPUTSELECT
+reset => theState.OUTPUTSELECT
+reset => theState.OUTPUTSELECT
+reset => theState.OUTPUTSELECT
+reset => theState.OUTPUTSELECT
+reset => theState.OUTPUTSELECT
+reset => theState.OUTPUTSELECT
+clock => theState~1.DATAIN
+buttonNS => theState.OUTPUTSELECT
+buttonNS => theState.OUTPUTSELECT
+buttonNS => theState.OUTPUTSELECT
+buttonNS => theState.OUTPUTSELECT
+buttonNS => theState.OUTPUTSELECT
+buttonNS => theState.OUTPUTSELECT
+buttonNS => theState.OUTPUTSELECT
+buttonNS => theState.OUTPUTSELECT
+redNS <= redNS.DB_MAX_OUTPUT_PORT_TYPE
+yellowNS <= yellowNS.DB_MAX_OUTPUT_PORT_TYPE
+greenNS <= greenNS.DB_MAX_OUTPUT_PORT_TYPE
+leftNS <= leftNS.DB_MAX_OUTPUT_PORT_TYPE
+buttonEW => theState.OUTPUTSELECT
+buttonEW => theState.OUTPUTSELECT
+buttonEW => theState.OUTPUTSELECT
+buttonEW => theState.OUTPUTSELECT
+buttonEW => theState.OUTPUTSELECT
+buttonEW => theState.OUTPUTSELECT
+buttonEW => theState.OUTPUTSELECT
+buttonEW => theState.OUTPUTSELECT
+redEW <= redEW.DB_MAX_OUTPUT_PORT_TYPE
+yellowEW <= yellowEW.DB_MAX_OUTPUT_PORT_TYPE
+greenEW <= greenEW.DB_MAX_OUTPUT_PORT_TYPE
+leftEW <= leftEW.DB_MAX_OUTPUT_PORT_TYPE
+
+
