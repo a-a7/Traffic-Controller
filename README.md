@@ -23,7 +23,8 @@ vsim TrafficController_TB
 add wave *
 run 440ns
 ```
-Note \ must be used before any spaces in file names
+Note: \ must be used before any spaces in file names.
+
 if you change the want to test from the beginning again enter:
 
 ```
