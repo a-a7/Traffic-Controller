@@ -12,3 +12,7 @@ If you have Quartus you can launch the project through TrafficController.qpf.
 ## Diagram
 Figure 1: Physical representation of what the system might look like if I could build it on a PCB.
 ![](Diagram.png)
+
+## Verification
+I am having issues using TrafficController_TB.vhd for testing, so I had to manually use model sim to ensure the states the changing properly. The waveform can be seen in the following screenshot of Modelsim.
+![](Waveform.png)
