@@ -18,7 +18,7 @@
 # -- Compiling entity trafficController
 # -- Compiling architecture behaviour of trafficController
 # 
-vcom -reportprogress 300 -work work {C:/Users/TheMineA7/Desktop/VHDL/Traffic Controller/TrafficController_TB.vhd}
+vcom -93 -work work {C:/Users/TheMineA7/Desktop/VHDL/Traffic Controller/TrafficController_TB.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -27,116 +27,30 @@ vcom -reportprogress 300 -work work {C:/Users/TheMineA7/Desktop/VHDL/Traffic Con
 # -- Compiling architecture behaviour of trafficController_TB
 # ** Error: C:/Users/TheMineA7/Desktop/VHDL/Traffic Controller/TrafficController_TB.vhd(33): (vcom-1136) Unknown identifier "green_TB".
 # 
-# ** Error: C:/Users/TheMineA7/Desktop/VHDL/Traffic Controller/TrafficController_TB.vhd(58): VHDL Compiler exiting
-vcom -reportprogress 300 -work work {C:/Users/TheMineA7/Desktop/VHDL/Traffic Controller/TrafficController_TB.vhd}
+# ** Error: C:/Users/TheMineA7/Desktop/VHDL/Traffic Controller/TrafficController_TB.vhd(68): VHDL Compiler exiting
+# C:/altera/13.0/modelsim_ase/win32aloem/vcom failed.
+vcom -93 -work work {C:/Users/TheMineA7/Desktop/VHDL/Traffic Controller/TrafficController_TB.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity trafficController_TB
 # -- Compiling architecture behaviour of trafficController_TB
-# ** Error: C:/Users/TheMineA7/Desktop/VHDL/Traffic Controller/TrafficController_TB.vhd(33): (vcom-1136) Unknown identifier "green_TB".
-# 
-# ** Error: C:/Users/TheMineA7/Desktop/VHDL/Traffic Controller/TrafficController_TB.vhd(58): VHDL Compiler exiting
-vcom -reportprogress 300 -work work {C:/Users/TheMineA7/Desktop/VHDL/Traffic Controller/TrafficController.vhd}
-# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity trafficController
-# -- Compiling architecture behaviour of trafficController
-vcom -reportprogress 300 -work work {C:/Users/TheMineA7/Desktop/VHDL/Traffic Controller/TrafficController.vhd}
-# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity trafficController
-# -- Compiling architecture behaviour of trafficController
-vcom -reportprogress 300 -work work {C:/Users/TheMineA7/Desktop/VHDL/Traffic Controller/TrafficController.vhd}
-vcom -reportprogress 300 -work work {C:/Users/TheMineA7/Desktop/VHDL/Traffic Controller/TrafficController.vhd}
-# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity trafficController
-# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
-# ** Warning: (vcom-6) -- Waiting for lock by "TheMineA7@THEMINEA7, pid = 10924
-# ". Lockfile is "C:/Users/TheMineA7/Desktop/VHDL/Traffic Controller/simulation/modelsim/rtl_work/_lock".
-# 
-# -- Compiling architecture behaviour of trafficController
-vcom -reportprogress 300 -work work {C:/Users/TheMineA7/Desktop/VHDL/Traffic Controller/TrafficController.vhd}
-# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity trafficController
-# -- Compiling architecture behaviour of trafficController
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity trafficController
-# -- Compiling architecture behaviour of trafficController
-vsim work.trafficcontroller
-# vsim work.trafficcontroller 
+vsim TrafficController_TB
+# vsim TrafficController_TB 
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
+# Loading work.trafficcontroller_tb(behaviour)
 # Loading work.trafficcontroller(behaviour)
-add wave -position insertpoint sim:/trafficcontroller/*
-add wave -position insertpoint sim:/trafficcontroller/*
-# WARNING: No extended dataflow license exists
-vsim -voptargs=+acc work.trafficcontroller
-# vsim -voptargs=+acc work.trafficcontroller 
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.trafficcontroller(behaviour)
-# WARNING: No extended dataflow license exists
-add wave -position end  sim:/trafficcontroller/reset
-add wave -position end  sim:/trafficcontroller/clock
-add wave -position end  sim:/trafficcontroller/buttonNS
-add wave -position end  sim:/trafficcontroller/redNS
-add wave -position end  sim:/trafficcontroller/yellowNS
-add wave -position end  sim:/trafficcontroller/greenNS
-add wave -position end  sim:/trafficcontroller/leftNS
-add wave -position end  sim:/trafficcontroller/buttonEW
-add wave -position end  sim:/trafficcontroller/redEW
-add wave -position end  sim:/trafficcontroller/yellowEW
-add wave -position end  sim:/trafficcontroller/greenEW
-add wave -position end  sim:/trafficcontroller/leftEW
-add wave -position end  sim:/trafficcontroller/theState
-add wave -position end  sim:/trafficcontroller/nextState
-force -freeze sim:/trafficcontroller/reset 1 0
-force -freeze sim:/trafficcontroller/clock 1 0, 0 {50 ps} -r 100
+add wave *
+run 600ns
 run
-force -freeze sim:/trafficcontroller/reset 0 0
+restart
 run
-run
-run
-run
-run
-run
-run
-run
-run
-force -freeze sim:/trafficcontroller/buttonEW 0 0
-noforce sim:/trafficcontroller/redEW
-force -freeze sim:/trafficcontroller/buttonEW 0 0
-force -freeze sim:/trafficcontroller/buttonNS 0 0
-force -freeze sim:/trafficcontroller/reset 1 0
-# Break key hit 
-run
-run
-force -freeze sim:/trafficcontroller/reset 1 0
-run
-run
-force -freeze sim:/trafficcontroller/reset 0 0
-run
-run
-run
-run
-run
-run
-run
-run
-run
+run 700ns
+restart
+run 580ns
+run 520ns
+restart
+run 520ns

@@ -30,7 +30,7 @@ ARCHITECTURE behaviour of trafficController_TB IS
         buttonNS => buttonNS_TB,
         redNS => redNS_TB,
         yellowNS => yellowNS_TB,
-        greenNS => green_TB,
+        greenNS => greenNS_TB,
         leftNS => leftNS_TB,
         buttonEW => buttonEW_TB,
         redEW => redEW_TB,

@@ -14,5 +14,17 @@ Figure 1: Physical representation of what the system might look like if I could 
 ![](Diagram.png)
 
 ## Verification
-I am having issues using TrafficController_TB.vhd for testing, so I had to manually use model sim to ensure the states the changing properly. The waveform can be seen in the following screenshot of Modelsim.
+I had issues using TrafficController_TB.vhd for testing, so I had to manually use model sim to ensure the states the changing properly. The waveform can be seen in the following screenshot of Modelsim.
 ![](Waveform.PNG)
+
+Update: To test TrafficController_TB.vhd you must open ModelSim. Then in the commands enter the following
+
+vcom -93 -work work {C:/____/Traffic Controller/TrafficController_TB.vhd}
+vsim TrafficController_TB
+add wave *
+run 520ns
+
+if you change the want to test from the beginning enter
+
+restart
+run 520ns
