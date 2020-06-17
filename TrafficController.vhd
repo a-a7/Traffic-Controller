@@ -35,43 +35,43 @@ BEGIN
  
 	--Next state logic
 	PROCESS (theState)
-		BEGIN
-			CASE theState IS
-				WHEN NSL => 
-					nextState <= NSG;
-				WHEN NSG => 
-					nextState <= NSY;
-				WHEN NSY => 
-					nextState <= NSR;
-				WHEN NSR => 
-					nextState <= EWL;
-				WHEN EWL => 
-					nextState <= EWG;
-				WHEN EWG => 
-					nextState <= EWY;
-				WHEN EWY => 
-					nextState <= EWR;
-				WHEN EWR => 
-					nextState <= NSL;
-			END CASE;
-		END PROCESS;
+	BEGIN
+		CASE theState IS
+			WHEN NSL => 
+				nextState <= NSG;
+			WHEN NSG => 
+				nextState <= NSY;
+			WHEN NSY => 
+				nextState <= NSR;
+			WHEN NSR => 
+				nextState <= EWL;
+			WHEN EWL => 
+				nextState <= EWG;
+			WHEN EWG => 
+				nextState <= EWY;
+			WHEN EWY => 
+				nextState <= EWR;
+			WHEN EWR => 
+				nextState <= NSL;
+		END CASE;
+	END PROCESS;
  
-		--Outputs
-		redNS <= '1' WHEN theState = NSR OR theState = EWR
-		         ELSE '0';
-		yellowNS <= '1' WHEN theState = NSY
-		            ELSE '0';
-		greenNS <= '1' WHEN theState = NSG
-		           ELSE '0';
-		leftNS <= '1' WHEN theState = NSL
-		          ELSE '0';
+	--Outputs
+	redNS <= '1' WHEN theState = NSR OR theState = EWR OR theState = EWY OR theState = EWG OR theState = EWL
+		ELSE '0';
+	yellowNS <= '1' WHEN theState = NSY
+		ELSE '0';
+	greenNS <= '1' WHEN theState = NSG
+		ELSE '0';
+	leftNS <= '1' WHEN theState = NSL
+		ELSE '0';
 
-		redEW <= '1' WHEN theState = EWR OR theState = NSR
-		         ELSE '0';
-		yellowEW <= '1' WHEN theState = EWY
-		            ELSE '0';
-		greenEW <= '1' WHEN theState = EWG
-		           ELSE '0';
-		leftEW <= '1' WHEN theState = EWL
-		          ELSE '0';
+	redEW <= '1' WHEN theState = EWR OR theState = NSR OR theState = NSY OR theState = NSG OR theState = NSL
+		ELSE '0';
+	yellowEW <= '1' WHEN theState = EWY
+		ELSE '0';
+	greenEW <= '1' WHEN theState = EWG
+		ELSE '0';
+	leftEW <= '1' WHEN theState = EWL
+		ELSE '0';
 END ARCHITECTURE;

@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for TrafficController
-Tue Jun 16 18:13:17 2020
+Wed Jun 17 15:42:18 2020
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
@@ -122,13 +122,13 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-----------+
 
 
-+-----------------------------------------------------------------------------------------------------------+
-; Slow 1200mV 85C Model Fmax Summary                                                                        ;
-+------------+-----------------+------------+---------------------------------------------------------------+
-; Fmax       ; Restricted Fmax ; Clock Name ; Note                                                          ;
-+------------+-----------------+------------+---------------------------------------------------------------+
-; 1287.0 MHz ; 250.0 MHz       ; clock      ; limit due to minimum period restriction (max I/O toggle rate) ;
-+------------+-----------------+------------+---------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 85C Model Fmax Summary                                                                         ;
++-------------+-----------------+------------+---------------------------------------------------------------+
+; Fmax        ; Restricted Fmax ; Clock Name ; Note                                                          ;
++-------------+-----------------+------------+---------------------------------------------------------------+
+; 1270.65 MHz ; 250.0 MHz       ; clock      ; limit due to minimum period restriction (max I/O toggle rate) ;
++-------------+-----------------+------------+---------------------------------------------------------------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
 
@@ -143,7 +143,7 @@ HTML report is unavailable in plain text report export.
 +-------+-------+---------------------+
 ; Clock ; Slack ; End Point TNS       ;
 +-------+-------+---------------------+
-; clock ; 0.223 ; 0.000               ;
+; clock ; 0.213 ; 0.000               ;
 +-------+-------+---------------------+
 
 
@@ -182,14 +182,14 @@ No paths to report.
 +-------+--------------+--------------+--------------+-------------+--------------+------------+------------+
 ; Slack ; From Node    ; To Node      ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +-------+--------------+--------------+--------------+-------------+--------------+------------+------------+
-; 0.223 ; theState.EWY ; theState.EWR ; clock        ; clock       ; 1.000        ; -0.061     ; 0.711      ;
-; 0.223 ; theState.NSL ; theState.NSG ; clock        ; clock       ; 1.000        ; -0.061     ; 0.711      ;
-; 0.224 ; theState.EWG ; theState.EWY ; clock        ; clock       ; 1.000        ; -0.061     ; 0.710      ;
-; 0.225 ; theState.EWL ; theState.EWG ; clock        ; clock       ; 1.000        ; -0.061     ; 0.709      ;
-; 0.226 ; theState.NSG ; theState.NSY ; clock        ; clock       ; 1.000        ; -0.061     ; 0.708      ;
-; 0.227 ; theState.NSY ; theState.NSR ; clock        ; clock       ; 1.000        ; -0.061     ; 0.707      ;
+; 0.213 ; theState.EWG ; theState.EWY ; clock        ; clock       ; 1.000        ; -0.061     ; 0.721      ;
+; 0.214 ; theState.NSL ; theState.NSG ; clock        ; clock       ; 1.000        ; -0.061     ; 0.720      ;
+; 0.215 ; theState.EWY ; theState.EWR ; clock        ; clock       ; 1.000        ; -0.061     ; 0.719      ;
+; 0.215 ; theState.NSY ; theState.NSR ; clock        ; clock       ; 1.000        ; -0.061     ; 0.719      ;
+; 0.216 ; theState.EWL ; theState.EWG ; clock        ; clock       ; 1.000        ; -0.061     ; 0.718      ;
+; 0.223 ; theState.NSG ; theState.NSY ; clock        ; clock       ; 1.000        ; -0.061     ; 0.711      ;
 ; 0.232 ; theState.EWR ; theState.NSL ; clock        ; clock       ; 1.000        ; -0.061     ; 0.702      ;
-; 0.235 ; theState.NSR ; theState.EWL ; clock        ; clock       ; 1.000        ; -0.061     ; 0.699      ;
+; 0.236 ; theState.NSR ; theState.EWL ; clock        ; clock       ; 1.000        ; -0.061     ; 0.698      ;
 +-------+--------------+--------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -199,13 +199,13 @@ No paths to report.
 ; Slack ; From Node    ; To Node      ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +-------+--------------+--------------+--------------+-------------+--------------+------------+------------+
 ; 0.380 ; theState.EWR ; theState.NSL ; clock        ; clock       ; 0.000        ; 0.061      ; 0.598      ;
-; 0.382 ; theState.NSR ; theState.EWL ; clock        ; clock       ; 0.000        ; 0.061      ; 0.600      ;
-; 0.392 ; theState.NSL ; theState.NSG ; clock        ; clock       ; 0.000        ; 0.061      ; 0.610      ;
-; 0.394 ; theState.NSY ; theState.NSR ; clock        ; clock       ; 0.000        ; 0.061      ; 0.612      ;
-; 0.395 ; theState.EWL ; theState.EWG ; clock        ; clock       ; 0.000        ; 0.061      ; 0.613      ;
-; 0.395 ; theState.NSG ; theState.NSY ; clock        ; clock       ; 0.000        ; 0.061      ; 0.613      ;
-; 0.396 ; theState.EWG ; theState.EWY ; clock        ; clock       ; 0.000        ; 0.061      ; 0.614      ;
-; 0.397 ; theState.EWY ; theState.EWR ; clock        ; clock       ; 0.000        ; 0.061      ; 0.615      ;
+; 0.381 ; theState.NSR ; theState.EWL ; clock        ; clock       ; 0.000        ; 0.061      ; 0.599      ;
+; 0.397 ; theState.NSG ; theState.NSY ; clock        ; clock       ; 0.000        ; 0.061      ; 0.615      ;
+; 0.399 ; theState.NSL ; theState.NSG ; clock        ; clock       ; 0.000        ; 0.061      ; 0.617      ;
+; 0.401 ; theState.NSY ; theState.NSR ; clock        ; clock       ; 0.000        ; 0.061      ; 0.619      ;
+; 0.402 ; theState.EWY ; theState.EWR ; clock        ; clock       ; 0.000        ; 0.061      ; 0.620      ;
+; 0.402 ; theState.EWL ; theState.EWG ; clock        ; clock       ; 0.000        ; 0.061      ; 0.620      ;
+; 0.403 ; theState.EWG ; theState.EWY ; clock        ; clock       ; 0.000        ; 0.061      ; 0.621      ;
 +-------+--------------+--------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -271,9 +271,9 @@ No paths to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------+------------+-------+-------+------------+-----------------+
-; buttonEW  ; clock      ; 1.412 ; 1.921 ; Rise       ; clock           ;
-; buttonNS  ; clock      ; 1.492 ; 1.990 ; Rise       ; clock           ;
-; reset     ; clock      ; 1.517 ; 2.013 ; Rise       ; clock           ;
+; buttonEW  ; clock      ; 1.407 ; 1.920 ; Rise       ; clock           ;
+; buttonNS  ; clock      ; 1.493 ; 1.990 ; Rise       ; clock           ;
+; reset     ; clock      ; 1.517 ; 2.014 ; Rise       ; clock           ;
 +-----------+------------+-------+-------+------------+-----------------+
 
 
@@ -282,9 +282,9 @@ No paths to report.
 +-----------+------------+--------+--------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
 +-----------+------------+--------+--------+------------+-----------------+
-; buttonEW  ; clock      ; -0.968 ; -1.471 ; Rise       ; clock           ;
-; buttonNS  ; clock      ; -1.042 ; -1.535 ; Rise       ; clock           ;
-; reset     ; clock      ; -1.133 ; -1.625 ; Rise       ; clock           ;
+; buttonEW  ; clock      ; -0.970 ; -1.472 ; Rise       ; clock           ;
+; buttonNS  ; clock      ; -1.042 ; -1.534 ; Rise       ; clock           ;
+; reset     ; clock      ; -1.131 ; -1.626 ; Rise       ; clock           ;
 +-----------+------------+--------+--------+------------+-----------------+
 
 
@@ -293,14 +293,14 @@ No paths to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------+------------+-------+-------+------------+-----------------+
-; greenEW   ; clock      ; 5.747 ; 5.678 ; Rise       ; clock           ;
-; greenNS   ; clock      ; 5.542 ; 5.479 ; Rise       ; clock           ;
-; leftEW    ; clock      ; 5.597 ; 5.548 ; Rise       ; clock           ;
+; greenEW   ; clock      ; 5.555 ; 5.493 ; Rise       ; clock           ;
+; greenNS   ; clock      ; 5.568 ; 5.506 ; Rise       ; clock           ;
+; leftEW    ; clock      ; 5.573 ; 5.514 ; Rise       ; clock           ;
 ; leftNS    ; clock      ; 5.595 ; 5.705 ; Rise       ; clock           ;
-; redEW     ; clock      ; 6.098 ; 6.093 ; Rise       ; clock           ;
-; redNS     ; clock      ; 6.102 ; 6.096 ; Rise       ; clock           ;
-; yellowEW  ; clock      ; 7.405 ; 7.177 ; Rise       ; clock           ;
-; yellowNS  ; clock      ; 5.554 ; 5.486 ; Rise       ; clock           ;
+; redEW     ; clock      ; 6.589 ; 6.531 ; Rise       ; clock           ;
+; redNS     ; clock      ; 6.556 ; 6.502 ; Rise       ; clock           ;
+; yellowEW  ; clock      ; 7.453 ; 7.234 ; Rise       ; clock           ;
+; yellowNS  ; clock      ; 5.571 ; 5.508 ; Rise       ; clock           ;
 +-----------+------------+-------+-------+------------+-----------------+
 
 
@@ -309,14 +309,14 @@ No paths to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------+------------+-------+-------+------------+-----------------+
-; greenEW   ; clock      ; 5.628 ; 5.556 ; Rise       ; clock           ;
-; greenNS   ; clock      ; 5.433 ; 5.367 ; Rise       ; clock           ;
-; leftEW    ; clock      ; 5.484 ; 5.432 ; Rise       ; clock           ;
+; greenEW   ; clock      ; 5.444 ; 5.378 ; Rise       ; clock           ;
+; greenNS   ; clock      ; 5.458 ; 5.393 ; Rise       ; clock           ;
+; leftEW    ; clock      ; 5.461 ; 5.399 ; Rise       ; clock           ;
 ; leftNS    ; clock      ; 5.478 ; 5.589 ; Rise       ; clock           ;
-; redEW     ; clock      ; 5.726 ; 5.669 ; Rise       ; clock           ;
-; redNS     ; clock      ; 5.730 ; 5.673 ; Rise       ; clock           ;
-; yellowEW  ; clock      ; 7.295 ; 7.063 ; Rise       ; clock           ;
-; yellowNS  ; clock      ; 5.445 ; 5.373 ; Rise       ; clock           ;
+; redEW     ; clock      ; 5.772 ; 5.707 ; Rise       ; clock           ;
+; redNS     ; clock      ; 5.743 ; 5.684 ; Rise       ; clock           ;
+; yellowEW  ; clock      ; 7.341 ; 7.118 ; Rise       ; clock           ;
+; yellowNS  ; clock      ; 5.461 ; 5.395 ; Rise       ; clock           ;
 +-----------+------------+-------+-------+------------+-----------------+
 
 
@@ -331,7 +331,7 @@ No synchronizer chains to report.
 +-------------+-----------------+------------+---------------------------------------------------------------+
 ; Fmax        ; Restricted Fmax ; Clock Name ; Note                                                          ;
 +-------------+-----------------+------------+---------------------------------------------------------------+
-; 1430.62 MHz ; 250.0 MHz       ; clock      ; limit due to minimum period restriction (max I/O toggle rate) ;
+; 1414.43 MHz ; 250.0 MHz       ; clock      ; limit due to minimum period restriction (max I/O toggle rate) ;
 +-------------+-----------------+------------+---------------------------------------------------------------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -341,7 +341,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------+-------+--------------------+
 ; Clock ; Slack ; End Point TNS      ;
 +-------+-------+--------------------+
-; clock ; 0.301 ; 0.000              ;
+; clock ; 0.293 ; 0.000              ;
 +-------+-------+--------------------+
 
 
@@ -380,14 +380,14 @@ No paths to report.
 +-------+--------------+--------------+--------------+-------------+--------------+------------+------------+
 ; Slack ; From Node    ; To Node      ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +-------+--------------+--------------+--------------+-------------+--------------+------------+------------+
-; 0.301 ; theState.NSL ; theState.NSG ; clock        ; clock       ; 1.000        ; -0.055     ; 0.639      ;
-; 0.309 ; theState.EWY ; theState.EWR ; clock        ; clock       ; 1.000        ; -0.055     ; 0.631      ;
-; 0.310 ; theState.EWG ; theState.EWY ; clock        ; clock       ; 1.000        ; -0.055     ; 0.630      ;
-; 0.310 ; theState.EWR ; theState.NSL ; clock        ; clock       ; 1.000        ; -0.055     ; 0.630      ;
-; 0.311 ; theState.EWL ; theState.EWG ; clock        ; clock       ; 1.000        ; -0.055     ; 0.629      ;
-; 0.312 ; theState.NSG ; theState.NSY ; clock        ; clock       ; 1.000        ; -0.055     ; 0.628      ;
-; 0.313 ; theState.NSY ; theState.NSR ; clock        ; clock       ; 1.000        ; -0.055     ; 0.627      ;
-; 0.320 ; theState.NSR ; theState.EWL ; clock        ; clock       ; 1.000        ; -0.055     ; 0.620      ;
+; 0.293 ; theState.NSL ; theState.NSG ; clock        ; clock       ; 1.000        ; -0.055     ; 0.647      ;
+; 0.300 ; theState.EWG ; theState.EWY ; clock        ; clock       ; 1.000        ; -0.055     ; 0.640      ;
+; 0.301 ; theState.EWY ; theState.EWR ; clock        ; clock       ; 1.000        ; -0.055     ; 0.639      ;
+; 0.303 ; theState.NSY ; theState.NSR ; clock        ; clock       ; 1.000        ; -0.055     ; 0.637      ;
+; 0.303 ; theState.EWL ; theState.EWG ; clock        ; clock       ; 1.000        ; -0.055     ; 0.637      ;
+; 0.309 ; theState.EWR ; theState.NSL ; clock        ; clock       ; 1.000        ; -0.055     ; 0.631      ;
+; 0.309 ; theState.NSG ; theState.NSY ; clock        ; clock       ; 1.000        ; -0.055     ; 0.631      ;
+; 0.321 ; theState.NSR ; theState.EWL ; clock        ; clock       ; 1.000        ; -0.055     ; 0.619      ;
 +-------+--------------+--------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -397,13 +397,13 @@ No paths to report.
 ; Slack ; From Node    ; To Node      ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +-------+--------------+--------------+--------------+-------------+--------------+------------+------------+
 ; 0.338 ; theState.EWR ; theState.NSL ; clock        ; clock       ; 0.000        ; 0.055      ; 0.537      ;
-; 0.344 ; theState.NSR ; theState.EWL ; clock        ; clock       ; 0.000        ; 0.055      ; 0.543      ;
-; 0.348 ; theState.NSL ; theState.NSG ; clock        ; clock       ; 0.000        ; 0.055      ; 0.547      ;
-; 0.356 ; theState.NSY ; theState.NSR ; clock        ; clock       ; 0.000        ; 0.055      ; 0.555      ;
-; 0.357 ; theState.EWL ; theState.EWG ; clock        ; clock       ; 0.000        ; 0.055      ; 0.556      ;
-; 0.357 ; theState.NSG ; theState.NSY ; clock        ; clock       ; 0.000        ; 0.055      ; 0.556      ;
-; 0.358 ; theState.EWG ; theState.EWY ; clock        ; clock       ; 0.000        ; 0.055      ; 0.557      ;
-; 0.359 ; theState.EWY ; theState.EWR ; clock        ; clock       ; 0.000        ; 0.055      ; 0.558      ;
+; 0.345 ; theState.NSR ; theState.EWL ; clock        ; clock       ; 0.000        ; 0.055      ; 0.544      ;
+; 0.353 ; theState.NSL ; theState.NSG ; clock        ; clock       ; 0.000        ; 0.055      ; 0.552      ;
+; 0.359 ; theState.NSG ; theState.NSY ; clock        ; clock       ; 0.000        ; 0.055      ; 0.558      ;
+; 0.363 ; theState.EWY ; theState.EWR ; clock        ; clock       ; 0.000        ; 0.055      ; 0.562      ;
+; 0.363 ; theState.NSY ; theState.NSR ; clock        ; clock       ; 0.000        ; 0.055      ; 0.562      ;
+; 0.363 ; theState.EWG ; theState.EWY ; clock        ; clock       ; 0.000        ; 0.055      ; 0.562      ;
+; 0.364 ; theState.EWL ; theState.EWG ; clock        ; clock       ; 0.000        ; 0.055      ; 0.563      ;
 +-------+--------------+--------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -469,8 +469,8 @@ No paths to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------+------------+-------+-------+------------+-----------------+
-; buttonEW  ; clock      ; 1.151 ; 1.615 ; Rise       ; clock           ;
-; buttonNS  ; clock      ; 1.212 ; 1.678 ; Rise       ; clock           ;
+; buttonEW  ; clock      ; 1.146 ; 1.614 ; Rise       ; clock           ;
+; buttonNS  ; clock      ; 1.212 ; 1.680 ; Rise       ; clock           ;
 ; reset     ; clock      ; 1.261 ; 1.715 ; Rise       ; clock           ;
 +-----------+------------+-------+-------+------------+-----------------+
 
@@ -480,9 +480,9 @@ No paths to report.
 +-----------+------------+--------+--------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
 +-----------+------------+--------+--------+------------+-----------------+
-; buttonEW  ; clock      ; -0.767 ; -1.221 ; Rise       ; clock           ;
-; buttonNS  ; clock      ; -0.822 ; -1.274 ; Rise       ; clock           ;
-; reset     ; clock      ; -0.923 ; -1.373 ; Rise       ; clock           ;
+; buttonEW  ; clock      ; -0.767 ; -1.219 ; Rise       ; clock           ;
+; buttonNS  ; clock      ; -0.822 ; -1.277 ; Rise       ; clock           ;
+; reset     ; clock      ; -0.924 ; -1.373 ; Rise       ; clock           ;
 +-----------+------------+--------+--------+------------+-----------------+
 
 
@@ -491,14 +491,14 @@ No paths to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------+------------+-------+-------+------------+-----------------+
-; greenEW   ; clock      ; 5.476 ; 5.369 ; Rise       ; clock           ;
-; greenNS   ; clock      ; 5.281 ; 5.184 ; Rise       ; clock           ;
-; leftEW    ; clock      ; 5.326 ; 5.248 ; Rise       ; clock           ;
+; greenEW   ; clock      ; 5.289 ; 5.200 ; Rise       ; clock           ;
+; greenNS   ; clock      ; 5.303 ; 5.210 ; Rise       ; clock           ;
+; leftEW    ; clock      ; 5.305 ; 5.220 ; Rise       ; clock           ;
 ; leftNS    ; clock      ; 5.308 ; 5.441 ; Rise       ; clock           ;
-; redEW     ; clock      ; 5.777 ; 5.733 ; Rise       ; clock           ;
-; redNS     ; clock      ; 5.784 ; 5.732 ; Rise       ; clock           ;
-; yellowEW  ; clock      ; 7.138 ; 6.884 ; Rise       ; clock           ;
-; yellowNS  ; clock      ; 5.287 ; 5.190 ; Rise       ; clock           ;
+; redEW     ; clock      ; 6.217 ; 6.129 ; Rise       ; clock           ;
+; redNS     ; clock      ; 6.190 ; 6.096 ; Rise       ; clock           ;
+; yellowEW  ; clock      ; 7.183 ; 6.936 ; Rise       ; clock           ;
+; yellowNS  ; clock      ; 5.305 ; 5.209 ; Rise       ; clock           ;
 +-----------+------------+-------+-------+------------+-----------------+
 
 
@@ -507,14 +507,14 @@ No paths to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------+------------+-------+-------+------------+-----------------+
-; greenEW   ; clock      ; 5.368 ; 5.260 ; Rise       ; clock           ;
-; greenNS   ; clock      ; 5.182 ; 5.084 ; Rise       ; clock           ;
-; leftEW    ; clock      ; 5.225 ; 5.145 ; Rise       ; clock           ;
+; greenEW   ; clock      ; 5.189 ; 5.098 ; Rise       ; clock           ;
+; greenNS   ; clock      ; 5.204 ; 5.109 ; Rise       ; clock           ;
+; leftEW    ; clock      ; 5.204 ; 5.117 ; Rise       ; clock           ;
 ; leftNS    ; clock      ; 5.203 ; 5.336 ; Rise       ; clock           ;
-; redEW     ; clock      ; 5.444 ; 5.359 ; Rise       ; clock           ;
-; redNS     ; clock      ; 5.452 ; 5.359 ; Rise       ; clock           ;
-; yellowEW  ; clock      ; 7.039 ; 6.783 ; Rise       ; clock           ;
-; yellowNS  ; clock      ; 5.189 ; 5.090 ; Rise       ; clock           ;
+; redEW     ; clock      ; 5.485 ; 5.393 ; Rise       ; clock           ;
+; redNS     ; clock      ; 5.463 ; 5.366 ; Rise       ; clock           ;
+; yellowEW  ; clock      ; 7.082 ; 6.833 ; Rise       ; clock           ;
+; yellowNS  ; clock      ; 5.206 ; 5.109 ; Rise       ; clock           ;
 +-----------+------------+-------+-------+------------+-----------------+
 
 
@@ -529,7 +529,7 @@ No synchronizer chains to report.
 +-------+-------+--------------------+
 ; Clock ; Slack ; End Point TNS      ;
 +-------+-------+--------------------+
-; clock ; 0.564 ; 0.000              ;
+; clock ; 0.560 ; 0.000              ;
 +-------+-------+--------------------+
 
 
@@ -538,7 +538,7 @@ No synchronizer chains to report.
 +-------+-------+-------------------+
 ; Clock ; Slack ; End Point TNS     ;
 +-------+-------+-------------------+
-; clock ; 0.200 ; 0.000             ;
+; clock ; 0.199 ; 0.000             ;
 +-------+-------+-------------------+
 
 
@@ -568,13 +568,13 @@ No paths to report.
 +-------+--------------+--------------+--------------+-------------+--------------+------------+------------+
 ; Slack ; From Node    ; To Node      ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +-------+--------------+--------------+--------------+-------------+--------------+------------+------------+
-; 0.564 ; theState.EWY ; theState.EWR ; clock        ; clock       ; 1.000        ; -0.035     ; 0.388      ;
-; 0.566 ; theState.EWG ; theState.EWY ; clock        ; clock       ; 1.000        ; -0.035     ; 0.386      ;
-; 0.567 ; theState.NSG ; theState.NSY ; clock        ; clock       ; 1.000        ; -0.035     ; 0.385      ;
-; 0.568 ; theState.EWL ; theState.EWG ; clock        ; clock       ; 1.000        ; -0.035     ; 0.384      ;
-; 0.569 ; theState.NSY ; theState.NSR ; clock        ; clock       ; 1.000        ; -0.035     ; 0.383      ;
-; 0.572 ; theState.NSR ; theState.EWL ; clock        ; clock       ; 1.000        ; -0.035     ; 0.380      ;
-; 0.572 ; theState.NSL ; theState.NSG ; clock        ; clock       ; 1.000        ; -0.035     ; 0.380      ;
+; 0.560 ; theState.EWG ; theState.EWY ; clock        ; clock       ; 1.000        ; -0.035     ; 0.392      ;
+; 0.561 ; theState.EWY ; theState.EWR ; clock        ; clock       ; 1.000        ; -0.035     ; 0.391      ;
+; 0.561 ; theState.EWL ; theState.EWG ; clock        ; clock       ; 1.000        ; -0.035     ; 0.391      ;
+; 0.562 ; theState.NSY ; theState.NSR ; clock        ; clock       ; 1.000        ; -0.035     ; 0.390      ;
+; 0.564 ; theState.NSG ; theState.NSY ; clock        ; clock       ; 1.000        ; -0.035     ; 0.388      ;
+; 0.567 ; theState.NSL ; theState.NSG ; clock        ; clock       ; 1.000        ; -0.035     ; 0.385      ;
+; 0.574 ; theState.NSR ; theState.EWL ; clock        ; clock       ; 1.000        ; -0.035     ; 0.378      ;
 ; 0.575 ; theState.EWR ; theState.NSL ; clock        ; clock       ; 1.000        ; -0.035     ; 0.377      ;
 +-------+--------------+--------------+--------------+-------------+--------------+------------+------------+
 
@@ -584,14 +584,14 @@ No paths to report.
 +-------+--------------+--------------+--------------+-------------+--------------+------------+------------+
 ; Slack ; From Node    ; To Node      ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +-------+--------------+--------------+--------------+-------------+--------------+------------+------------+
-; 0.200 ; theState.NSR ; theState.EWL ; clock        ; clock       ; 0.000        ; 0.035      ; 0.319      ;
+; 0.199 ; theState.NSR ; theState.EWL ; clock        ; clock       ; 0.000        ; 0.035      ; 0.318      ;
 ; 0.205 ; theState.EWR ; theState.NSL ; clock        ; clock       ; 0.000        ; 0.035      ; 0.324      ;
-; 0.206 ; theState.EWL ; theState.EWG ; clock        ; clock       ; 0.000        ; 0.035      ; 0.325      ;
-; 0.206 ; theState.NSG ; theState.NSY ; clock        ; clock       ; 0.000        ; 0.035      ; 0.325      ;
-; 0.206 ; theState.NSY ; theState.NSR ; clock        ; clock       ; 0.000        ; 0.035      ; 0.325      ;
-; 0.207 ; theState.EWG ; theState.EWY ; clock        ; clock       ; 0.000        ; 0.035      ; 0.326      ;
-; 0.209 ; theState.EWY ; theState.EWR ; clock        ; clock       ; 0.000        ; 0.035      ; 0.328      ;
-; 0.210 ; theState.NSL ; theState.NSG ; clock        ; clock       ; 0.000        ; 0.035      ; 0.329      ;
+; 0.209 ; theState.NSG ; theState.NSY ; clock        ; clock       ; 0.000        ; 0.035      ; 0.328      ;
+; 0.210 ; theState.NSY ; theState.NSR ; clock        ; clock       ; 0.000        ; 0.035      ; 0.329      ;
+; 0.211 ; theState.EWY ; theState.EWR ; clock        ; clock       ; 0.000        ; 0.035      ; 0.330      ;
+; 0.212 ; theState.EWL ; theState.EWG ; clock        ; clock       ; 0.000        ; 0.035      ; 0.331      ;
+; 0.212 ; theState.EWG ; theState.EWY ; clock        ; clock       ; 0.000        ; 0.035      ; 0.331      ;
+; 0.215 ; theState.NSL ; theState.NSG ; clock        ; clock       ; 0.000        ; 0.035      ; 0.334      ;
 +-------+--------------+--------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -657,9 +657,9 @@ No paths to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------+------------+-------+-------+------------+-----------------+
-; buttonEW  ; clock      ; 0.768 ; 1.506 ; Rise       ; clock           ;
+; buttonEW  ; clock      ; 0.763 ; 1.505 ; Rise       ; clock           ;
 ; buttonNS  ; clock      ; 0.812 ; 1.557 ; Rise       ; clock           ;
-; reset     ; clock      ; 0.848 ; 1.576 ; Rise       ; clock           ;
+; reset     ; clock      ; 0.848 ; 1.579 ; Rise       ; clock           ;
 +-----------+------------+-------+-------+------------+-----------------+
 
 
@@ -668,9 +668,9 @@ No paths to report.
 +-----------+------------+--------+--------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
 +-----------+------------+--------+--------+------------+-----------------+
-; buttonEW  ; clock      ; -0.517 ; -1.244 ; Rise       ; clock           ;
-; buttonNS  ; clock      ; -0.554 ; -1.294 ; Rise       ; clock           ;
-; reset     ; clock      ; -0.626 ; -1.355 ; Rise       ; clock           ;
+; buttonEW  ; clock      ; -0.519 ; -1.249 ; Rise       ; clock           ;
+; buttonNS  ; clock      ; -0.553 ; -1.294 ; Rise       ; clock           ;
+; reset     ; clock      ; -0.626 ; -1.356 ; Rise       ; clock           ;
 +-----------+------------+--------+--------+------------+-----------------+
 
 
@@ -679,14 +679,14 @@ No paths to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------+------------+-------+-------+------------+-----------------+
-; greenEW   ; clock      ; 3.433 ; 3.442 ; Rise       ; clock           ;
-; greenNS   ; clock      ; 3.352 ; 3.330 ; Rise       ; clock           ;
-; leftEW    ; clock      ; 3.363 ; 3.365 ; Rise       ; clock           ;
+; greenEW   ; clock      ; 3.342 ; 3.331 ; Rise       ; clock           ;
+; greenNS   ; clock      ; 3.365 ; 3.349 ; Rise       ; clock           ;
+; leftEW    ; clock      ; 3.351 ; 3.347 ; Rise       ; clock           ;
 ; leftNS    ; clock      ; 3.401 ; 3.413 ; Rise       ; clock           ;
-; redEW     ; clock      ; 3.623 ; 3.669 ; Rise       ; clock           ;
-; redNS     ; clock      ; 3.655 ; 3.678 ; Rise       ; clock           ;
-; yellowEW  ; clock      ; 4.774 ; 4.585 ; Rise       ; clock           ;
-; yellowNS  ; clock      ; 3.356 ; 3.335 ; Rise       ; clock           ;
+; redEW     ; clock      ; 3.885 ; 3.907 ; Rise       ; clock           ;
+; redNS     ; clock      ; 3.897 ; 3.899 ; Rise       ; clock           ;
+; yellowEW  ; clock      ; 4.800 ; 4.622 ; Rise       ; clock           ;
+; yellowNS  ; clock      ; 3.359 ; 3.346 ; Rise       ; clock           ;
 +-----------+------------+-------+-------+------------+-----------------+
 
 
@@ -695,14 +695,14 @@ No paths to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------+------------+-------+-------+------------+-----------------+
-; greenEW   ; clock      ; 3.364 ; 3.370 ; Rise       ; clock           ;
-; greenNS   ; clock      ; 3.288 ; 3.264 ; Rise       ; clock           ;
-; leftEW    ; clock      ; 3.297 ; 3.296 ; Rise       ; clock           ;
+; greenEW   ; clock      ; 3.277 ; 3.263 ; Rise       ; clock           ;
+; greenNS   ; clock      ; 3.301 ; 3.283 ; Rise       ; clock           ;
+; leftEW    ; clock      ; 3.286 ; 3.278 ; Rise       ; clock           ;
 ; leftNS    ; clock      ; 3.332 ; 3.346 ; Rise       ; clock           ;
-; redEW     ; clock      ; 3.411 ; 3.428 ; Rise       ; clock           ;
-; redNS     ; clock      ; 3.443 ; 3.438 ; Rise       ; clock           ;
-; yellowEW  ; clock      ; 4.710 ; 4.518 ; Rise       ; clock           ;
-; yellowNS  ; clock      ; 3.292 ; 3.268 ; Rise       ; clock           ;
+; redEW     ; clock      ; 3.434 ; 3.445 ; Rise       ; clock           ;
+; redNS     ; clock      ; 3.449 ; 3.441 ; Rise       ; clock           ;
+; yellowEW  ; clock      ; 4.735 ; 4.553 ; Rise       ; clock           ;
+; yellowNS  ; clock      ; 3.295 ; 3.279 ; Rise       ; clock           ;
 +-----------+------------+-------+-------+------------+-----------------+
 
 
@@ -717,8 +717,8 @@ No synchronizer chains to report.
 +------------------+-------+-------+----------+---------+---------------------+
 ; Clock            ; Setup ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
 +------------------+-------+-------+----------+---------+---------------------+
-; Worst-case Slack ; 0.223 ; 0.200 ; N/A      ; N/A     ; -3.000              ;
-;  clock           ; 0.223 ; 0.200 ; N/A      ; N/A     ; -3.000              ;
+; Worst-case Slack ; 0.213 ; 0.199 ; N/A      ; N/A     ; -3.000              ;
+;  clock           ; 0.213 ; 0.199 ; N/A      ; N/A     ; -3.000              ;
 ; Design-wide TNS  ; 0.0   ; 0.0   ; 0.0      ; 0.0     ; -13.429             ;
 ;  clock           ; 0.000 ; 0.000 ; N/A      ; N/A     ; -13.429             ;
 +------------------+-------+-------+----------+---------+---------------------+
@@ -729,9 +729,9 @@ No synchronizer chains to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------+------------+-------+-------+------------+-----------------+
-; buttonEW  ; clock      ; 1.412 ; 1.921 ; Rise       ; clock           ;
-; buttonNS  ; clock      ; 1.492 ; 1.990 ; Rise       ; clock           ;
-; reset     ; clock      ; 1.517 ; 2.013 ; Rise       ; clock           ;
+; buttonEW  ; clock      ; 1.407 ; 1.920 ; Rise       ; clock           ;
+; buttonNS  ; clock      ; 1.493 ; 1.990 ; Rise       ; clock           ;
+; reset     ; clock      ; 1.517 ; 2.014 ; Rise       ; clock           ;
 +-----------+------------+-------+-------+------------+-----------------+
 
 
@@ -740,9 +740,9 @@ No synchronizer chains to report.
 +-----------+------------+--------+--------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
 +-----------+------------+--------+--------+------------+-----------------+
-; buttonEW  ; clock      ; -0.517 ; -1.221 ; Rise       ; clock           ;
-; buttonNS  ; clock      ; -0.554 ; -1.274 ; Rise       ; clock           ;
-; reset     ; clock      ; -0.626 ; -1.355 ; Rise       ; clock           ;
+; buttonEW  ; clock      ; -0.519 ; -1.219 ; Rise       ; clock           ;
+; buttonNS  ; clock      ; -0.553 ; -1.277 ; Rise       ; clock           ;
+; reset     ; clock      ; -0.626 ; -1.356 ; Rise       ; clock           ;
 +-----------+------------+--------+--------+------------+-----------------+
 
 
@@ -751,14 +751,14 @@ No synchronizer chains to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------+------------+-------+-------+------------+-----------------+
-; greenEW   ; clock      ; 5.747 ; 5.678 ; Rise       ; clock           ;
-; greenNS   ; clock      ; 5.542 ; 5.479 ; Rise       ; clock           ;
-; leftEW    ; clock      ; 5.597 ; 5.548 ; Rise       ; clock           ;
+; greenEW   ; clock      ; 5.555 ; 5.493 ; Rise       ; clock           ;
+; greenNS   ; clock      ; 5.568 ; 5.506 ; Rise       ; clock           ;
+; leftEW    ; clock      ; 5.573 ; 5.514 ; Rise       ; clock           ;
 ; leftNS    ; clock      ; 5.595 ; 5.705 ; Rise       ; clock           ;
-; redEW     ; clock      ; 6.098 ; 6.093 ; Rise       ; clock           ;
-; redNS     ; clock      ; 6.102 ; 6.096 ; Rise       ; clock           ;
-; yellowEW  ; clock      ; 7.405 ; 7.177 ; Rise       ; clock           ;
-; yellowNS  ; clock      ; 5.554 ; 5.486 ; Rise       ; clock           ;
+; redEW     ; clock      ; 6.589 ; 6.531 ; Rise       ; clock           ;
+; redNS     ; clock      ; 6.556 ; 6.502 ; Rise       ; clock           ;
+; yellowEW  ; clock      ; 7.453 ; 7.234 ; Rise       ; clock           ;
+; yellowNS  ; clock      ; 5.571 ; 5.508 ; Rise       ; clock           ;
 +-----------+------------+-------+-------+------------+-----------------+
 
 
@@ -767,14 +767,14 @@ No synchronizer chains to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------+------------+-------+-------+------------+-----------------+
-; greenEW   ; clock      ; 3.364 ; 3.370 ; Rise       ; clock           ;
-; greenNS   ; clock      ; 3.288 ; 3.264 ; Rise       ; clock           ;
-; leftEW    ; clock      ; 3.297 ; 3.296 ; Rise       ; clock           ;
+; greenEW   ; clock      ; 3.277 ; 3.263 ; Rise       ; clock           ;
+; greenNS   ; clock      ; 3.301 ; 3.283 ; Rise       ; clock           ;
+; leftEW    ; clock      ; 3.286 ; 3.278 ; Rise       ; clock           ;
 ; leftNS    ; clock      ; 3.332 ; 3.346 ; Rise       ; clock           ;
-; redEW     ; clock      ; 3.411 ; 3.428 ; Rise       ; clock           ;
-; redNS     ; clock      ; 3.443 ; 3.438 ; Rise       ; clock           ;
-; yellowEW  ; clock      ; 4.710 ; 4.518 ; Rise       ; clock           ;
-; yellowNS  ; clock      ; 3.292 ; 3.268 ; Rise       ; clock           ;
+; redEW     ; clock      ; 3.434 ; 3.445 ; Rise       ; clock           ;
+; redNS     ; clock      ; 3.449 ; 3.441 ; Rise       ; clock           ;
+; yellowEW  ; clock      ; 4.735 ; 4.553 ; Rise       ; clock           ;
+; yellowNS  ; clock      ; 3.295 ; 3.279 ; Rise       ; clock           ;
 +-----------+------------+-------+-------+------------+-----------------+
 
 
@@ -889,7 +889,7 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 ; Unconstrained Input Ports       ; 3     ; 3    ;
 ; Unconstrained Input Port Paths  ; 24    ; 24   ;
 ; Unconstrained Output Ports      ; 8     ; 8    ;
-; Unconstrained Output Port Paths ; 10    ; 10   ;
+; Unconstrained Output Port Paths ; 16    ; 16   ;
 +---------------------------------+-------+------+
 
 
@@ -899,7 +899,7 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
-    Info: Processing started: Tue Jun 16 18:13:15 2020
+    Info: Processing started: Wed Jun 17 15:42:16 2020
 Info: Command: quartus_sta TrafficController -c TrafficController
 Info: qsta_default_script.tcl version: #1
 Warning (20028): Parallel compilation is not licensed and has been disabled
@@ -913,10 +913,10 @@ Info (332143): No user constrained clock uncertainty found in the design. Callin
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
 Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 1200mV 85C Model
-Info (332146): Worst-case setup slack is 0.223
+Info (332146): Worst-case setup slack is 0.213
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):     0.223         0.000 clock 
+    Info (332119):     0.213         0.000 clock 
 Info (332146): Worst-case hold slack is 0.380
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
@@ -933,10 +933,10 @@ Info: Analyzing Slow 1200mV 0C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
-Info (332146): Worst-case setup slack is 0.301
+Info (332146): Worst-case setup slack is 0.293
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):     0.301         0.000 clock 
+    Info (332119):     0.293         0.000 clock 
 Info (332146): Worst-case hold slack is 0.338
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
@@ -951,14 +951,14 @@ Info (332146): Worst-case minimum pulse width slack is -3.000
     Info (332119):    -3.000       -11.000 clock 
 Info: Analyzing Fast 1200mV 0C Model
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
-Info (332146): Worst-case setup slack is 0.564
+Info (332146): Worst-case setup slack is 0.560
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):     0.564         0.000 clock 
-Info (332146): Worst-case hold slack is 0.200
+    Info (332119):     0.560         0.000 clock 
+Info (332146): Worst-case hold slack is 0.199
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):     0.200         0.000 clock 
+    Info (332119):     0.199         0.000 clock 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Critical Warning (332148): Timing requirements not met
@@ -971,7 +971,7 @@ Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 5 warnings
     Info: Peak virtual memory: 4594 megabytes
-    Info: Processing ended: Tue Jun 16 18:13:17 2020
+    Info: Processing ended: Wed Jun 17 15:42:18 2020
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:01
 

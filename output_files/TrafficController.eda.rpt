@@ -1,5 +1,5 @@
 EDA Netlist Writer report for TrafficController
-Tue Jun 16 18:13:19 2020
+Wed Jun 17 15:42:19 2020
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Tue Jun 16 18:13:18 2020 ;
+; EDA Netlist Writer Status ; Successful - Wed Jun 17 15:42:19 2020 ;
 ; Revision Name             ; TrafficController                     ;
 ; Top-level Entity Name     ; trafficController                     ;
 ; Family                    ; Cyclone III                           ;
@@ -88,7 +88,7 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
-    Info: Processing started: Tue Jun 16 18:13:18 2020
+    Info: Processing started: Wed Jun 17 15:42:18 2020
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off TrafficController -c TrafficController
 Info (204019): Generated file TrafficController_6_1200mv_85c_slow.vho in folder "C:/Users/TheMineA7/Desktop/VHDL/Traffic Controller/simulation/modelsim/" for EDA simulation tool
 Info (204019): Generated file TrafficController_6_1200mv_0c_slow.vho in folder "C:/Users/TheMineA7/Desktop/VHDL/Traffic Controller/simulation/modelsim/" for EDA simulation tool
@@ -100,7 +100,7 @@ Info (204019): Generated file TrafficController_min_1200mv_0c_vhd_fast.sdo in fo
 Info (204019): Generated file TrafficController_vhd.sdo in folder "C:/Users/TheMineA7/Desktop/VHDL/Traffic Controller/simulation/modelsim/" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 4529 megabytes
-    Info: Processing ended: Tue Jun 16 18:13:19 2020
+    Info: Processing ended: Wed Jun 17 15:42:19 2020
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
