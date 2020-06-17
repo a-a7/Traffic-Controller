@@ -62,7 +62,7 @@ ARCHITECTURE behaviour of trafficController_TB IS
         buttonEW_TB <= '1';
         wait for 40 ns;
         buttonEW_TB <= '0';
-        wait for 200 ns;
+        wait;
     END PROCESS;
 
 END ARCHITECTURE;
