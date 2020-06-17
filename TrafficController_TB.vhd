@@ -52,7 +52,17 @@ ARCHITECTURE behaviour of trafficController_TB IS
     Simluation : process
     BEGIN
         reset_TB <= '1'; buttonNS_TB <= '0'; buttonEW_TB <= '0';
-        wait for 160 ns;
+        wait for 40 ns;
+        reset_TB <= '0';
+        wait for 200 ns;
+        buttonNS_TB <= '1';
+        wait for 40 ns;
+        buttonNS_TB <= '0';
+        wait for 200 ns;
+        buttonEW_TB <= '1';
+        wait for 40 ns;
+        buttonEW_TB <= '0';
+        wait for 200 ns;
     END PROCESS;
 
 END ARCHITECTURE;

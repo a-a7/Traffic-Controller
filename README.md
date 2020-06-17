@@ -15,4 +15,4 @@ Figure 1: Physical representation of what the system might look like if I could 
 
 ## Verification
 I am having issues using TrafficController_TB.vhd for testing, so I had to manually use model sim to ensure the states the changing properly. The waveform can be seen in the following screenshot of Modelsim.
-![](Waveform.png)
+![](Waveform.PNG)
