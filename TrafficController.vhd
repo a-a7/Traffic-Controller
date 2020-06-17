@@ -13,7 +13,8 @@ END ENTITY;
 
 ARCHITECTURE behaviour OF trafficController IS
 	TYPE statetype IS (NSL, NSG, NSY, NSR, EWL, EWG, EWY, EWR); --States (NS = North & Southbound, EW = East & Westbound, L = Left Green Light, G = Green Light, Y = Yellow Light)
-	SIGNAL theState, nextState : statetype;
+	SIGNAL theState : statetype := NSL;
+	SIGNAL nextState : statetype;
 
 	--High level specification
 BEGIN
