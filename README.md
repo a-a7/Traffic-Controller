@@ -34,3 +34,7 @@ run 440ns
 
 It resulted in the following Waveform:
 ![](ModelSim.png)
+
+## Next Steps and Reflection
+I want to make the FSM stay on certain states for a while e.g. stay on Yellow for 10 seconds, Green 1 minute, Left for 30 seconds. I am not exactly sure how to do this, so this is for the future. I also want to try to use Python for verification. Since I haven't ever done this I will also leave this for later.
+Overall this was a very fun project. Good to get back into the grove of things.
