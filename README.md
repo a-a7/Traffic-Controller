@@ -15,21 +15,21 @@ Figure 1: Physical representation of what the system might look like if I could 
 ![](Diagram.png)
 
 ## Verification
-Since I didn't know how to test using the testbench file *TrafficController_TB.vhd*, I had to manually use ModelSim to ensure the states the changing properly. The waveform can be seen in the following screenshot of ModelSim.
-![](Waveform.png)
-
-Update: I discovered to test *TrafficController_TB.vhd* you must open ModelSim. Then in the commands enter the following:
+To test *TrafficController_TB.vhd* you must open ModelSim. Then in the terminal enter the following:
 
 ```
-vcom -93 -work work {C:/____/Traffic Controller/TrafficController_TB.vhd}
+vcom -93 -work work {C:/____/Traffic\ Controller/TrafficController_TB.vhd}
 vsim TrafficController_TB
 add wave *
-run 520ns
+run 440ns
 ```
-
+Note \ must be used before any spaces in file names
 if you change the want to test from the beginning again enter:
 
 ```
 restart
-run 520ns
+run 440ns
 ```
+
+It resulted in the following Waveform:
+![](ModelSim.png)

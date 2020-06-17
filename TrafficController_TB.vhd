@@ -54,14 +54,15 @@ ARCHITECTURE behaviour of trafficController_TB IS
         reset_TB <= '1'; buttonNS_TB <= '0'; buttonEW_TB <= '0';
         wait for 40 ns;
         reset_TB <= '0';
-        wait for 200 ns;
+        wait for 160 ns;
         buttonNS_TB <= '1';
         wait for 40 ns;
         buttonNS_TB <= '0';
-        wait for 200 ns;
+        wait for 160 ns;
         buttonEW_TB <= '1';
         wait for 40 ns;
         buttonEW_TB <= '0';
+        --wait for 160 ns;
         wait;
     END PROCESS;
 

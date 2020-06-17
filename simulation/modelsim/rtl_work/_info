@@ -4,7 +4,7 @@ K3
 cModel Technology
 Z0 dC:\Users\TheMineA7\Desktop\VHDL\Traffic Controller\simulation\modelsim
 Etrafficcontroller
-Z1 w1592352864
+Z1 w1592419907
 Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
 Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
 Z4 dC:\Users\TheMineA7\Desktop\VHDL\Traffic Controller\simulation\modelsim
@@ -15,7 +15,7 @@ L4
 V`Vb1CS9TY[V<:hoiE4]Hj1
 Z7 OV;C;10.1d;51
 31
-Z8 !s108 1592359970.482000
+Z8 !s108 1592420087.745000
 Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/TheMineA7/Desktop/VHDL/Traffic Controller/TrafficController.vhd|
 Z10 !s107 C:/Users/TheMineA7/Desktop/VHDL/Traffic Controller/TrafficController.vhd|
 Z11 o-93 -work work -O0
@@ -39,7 +39,7 @@ R12
 !s100 ee[DoMl3c]H[Bj9>_n9[e0
 !i10b 1
 Etrafficcontroller_tb
-Z13 w1592360170
+Z13 w1592419860
 R2
 R3
 R4
@@ -52,7 +52,7 @@ Vmz7@`[@NABK5[;=Z;:30U0
 R7
 31
 !i10b 1
-Z16 !s108 1592360177.605000
+Z16 !s108 1592420338.037000
 Z17 !s90 -reportprogress|300|-93|-work|work|C:/Users/TheMineA7/Desktop/VHDL/Traffic Controller/TrafficController_TB.vhd|
 Z18 !s107 C:/Users/TheMineA7/Desktop/VHDL/Traffic Controller/TrafficController_TB.vhd|
 R11
@@ -60,11 +60,11 @@ R12
 Abehaviour
 R2
 R3
-DEx4 work 20 trafficcontroller_tb 0 22 mz7@`[@NABK5[;=Z;:30U0
+Z19 DEx4 work 20 trafficcontroller_tb 0 22 mz7@`[@NABK5[;=Z;:30U0
 l25
 L8
-VRLHF`GM[DQ;z;<RebKz^h0
-!s100 kiR0SG^P^[N35YDWJFbG03
+Z20 V1:mlNG6290lEMIjRgRol03
+Z21 !s100 Wjzl`>YEX`oY`1d5B?f7a0
 R7
 31
 !i10b 1

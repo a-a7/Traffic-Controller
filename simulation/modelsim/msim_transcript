@@ -18,18 +18,38 @@
 # -- Compiling entity trafficController
 # -- Compiling architecture behaviour of trafficController
 # 
-vcom -93 -work work {C:/Users/TheMineA7/Desktop/VHDL/Traffic Controller/TrafficController_TB.vhd}
+vcom -93 -work work C:/Users/TheMineA7/Desktop/VHDL/Traffic Controller/TrafficController_TB.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# ** Error: (vcom-7) Failed to open design unit file "C:/Users/TheMineA7/Desktop/VHDL/Traffic" in read mode.
+# 
+# No such file or directory. (errno = ENOENT)
+# C:/altera/13.0/modelsim_ase/win32aloem/vcom failed.
+vcom -93 -work work C:/Users/TheMineA7/Desktop/VHDL/Traffic /TrafficController_TB.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# ** Error: (vcom-7) Failed to open design unit file "C:/Users/TheMineA7/Desktop/VHDL/Traffic" in read mode.
+# 
+# No such file or directory. (errno = ENOENT)
+# C:/altera/13.0/modelsim_ase/win32aloem/vcom failed.
+vcom -93 -work work C:/Users/TheMineA7/Desktop/VHDL/Traffic/TrafficController_TB.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# ** Error: (vcom-7) Failed to open design unit file "C:/Users/TheMineA7/Desktop/VHDL/Traffic/TrafficController_TB.vhd" in read mode.
+# 
+# No such file or directory. (errno = ENOENT)
+# C:/altera/13.0/modelsim_ase/win32aloem/vcom failed.
+vcom -93 -work work C:/Users/TheMineA7/Desktop/VHDL/Traffic Controller/TrafficController_TB.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# ** Error: (vcom-7) Failed to open design unit file "C:/Users/TheMineA7/Desktop/VHDL/Traffic" in read mode.
+# 
+# No such file or directory. (errno = ENOENT)
+# C:/altera/13.0/modelsim_ase/win32aloem/vcom failed.
+vcom -93 -work work C:/Users/TheMineA7/Desktop/VHDL/Traffic\ Controller/TrafficController_TB.vhd
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity trafficController_TB
 # -- Compiling architecture behaviour of trafficController_TB
-# ** Error: C:/Users/TheMineA7/Desktop/VHDL/Traffic Controller/TrafficController_TB.vhd(33): (vcom-1136) Unknown identifier "green_TB".
-# 
-# ** Error: C:/Users/TheMineA7/Desktop/VHDL/Traffic Controller/TrafficController_TB.vhd(68): VHDL Compiler exiting
-# C:/altera/13.0/modelsim_ase/win32aloem/vcom failed.
-vcom -93 -work work {C:/Users/TheMineA7/Desktop/VHDL/Traffic Controller/TrafficController_TB.vhd}
+vcom -93 -work work C:/Users/TheMineA7/Desktop/VHDL/Traffic\ Controller/TrafficController_TB.vhd
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -44,13 +64,4 @@ vsim TrafficController_TB
 # Loading work.trafficcontroller_tb(behaviour)
 # Loading work.trafficcontroller(behaviour)
 add wave *
-run 600ns
-run
-restart
-run
-run 700ns
-restart
-run 580ns
-run 520ns
-restart
 run 520ns
