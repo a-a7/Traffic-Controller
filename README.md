@@ -25,16 +25,19 @@ run 440ns
 ```
 Note: \ must be used before any spaces in file names.
 
-If you change the want to test from the beginning again enter:
+If you make changes to the test bench and want to test from the beginning again enter:
 
 ```
 restart
 run 440ns
 ```
 
-It resulted in the following Waveform:
+The test resulted in the following Waveform:
 ![](ModelSim.png)
 
 ## Next Steps and Reflection
-I want to make the FSM stay on certain states for a while e.g. stay on Yellow for 10 seconds, Green 1 minute, Left for 30 seconds. I am not exactly sure how to do this, so this is for the future. I also want to try to use Python for verification. Since I haven't ever done this I will also leave this for later.
+I want to make the FSM stay on certain states for a while i.e. stay on Yellow for 10 seconds, Green 1 minute, Left for 30 seconds. I am not exactly sure how to do this, so this is for the future. I also want to try to use Python for verification, it would be something neat to learn.
 Overall this was a very fun project. Good to get back into the grove of things.
+
+## Edit
+I did some research and it seems as though I would have to make another FSM for counting time. Some sources also said that a shift register can be used for delay. This is something I will look into over the winter break as I am currently occupied with school.
